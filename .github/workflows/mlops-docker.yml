@@ -41,7 +41,7 @@ jobs:
       # PENTING: Pastikan file MLproject dan conda.yaml ada di repo Anda!
       - name: Run mlflow project
         run: |
-          mlflow run . --env-manager=local
+          mlflow run MLproject --env-manager=local
 
       # 6. Ambil Run ID terbaru secara otomatis
       # Script ini mencari folder terbaru di mlruns/0/
